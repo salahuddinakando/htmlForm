@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Form, HTML Table</title>
+<style>
+table{margin:30px;}
+table tr th{padding: 7px;}
+table tr td{padding: 1px;}
+
+
+</style>
+</head>
+<body>
+    <form action="http://animalhospital.freemyip.com/test.php" method="get">
+	<table>
+		<tr>
+			<th><label for="name">Name : </label></th>
+			<td><input type="text" id="name" name="name" placeholder="Your Name"></td>
+		</tr>
+		<tr>
+			<th><label for="class">Class : </label></th>
+			<td><input type="password" id="class" name="class"></td>
+		</tr>
+		<tr>
+			<th><label for="course">Courses name : </label></th>
+			<td><select id="course" name="course">
+				<optgroup label="Compulsory Course">
+					<option value="Mathematics">Mathematics</option>
+					<option value="Electrical Physics">Electrical Physics</option>
+					<option value="Web Programming">Web Programming</option>			
+					<option value="OOP">Object Oriented Programming</option>			
+				</optgroup>
+			</select></td>
+		</tr>
+		<tr>
+			<th><label for="types">Courses type : </label></th>
+			<td><select id="types" name="types">
+				<option value="Contract teaching">Contract Teaching</option>
+				<option value="On-campus">On Campus</option>
+				<option value="Online course">Online course</option>
+				<option value="Open Study">Open Study</option>
+			</select></td>
+		</tr>
+		<tr>
+			<th><label for="gender">Gender :</label></th>
+		</tr>
+		<tr>
+			<td><input type="radio" id="male" name="gender" value="Male">
+			<label for="male">Male</label></td>
+		</tr>
+		<tr>
+			<td><input type="radio" id="female" name="gender" value="Female">
+			<label for="female">Female</label></td>
+		</tr>
+		<tr>
+			<td><input type="radio" id="other" name="gender" value="Other">
+			<label for="other">Other</label></td>
+		</tr>
+		<tr>
+			<th><label for="hobbies">Hobbies : <label></th> 
+		</tr>
+		<tr>
+			<td><input type="checkbox" id="playing" name="hobbies" value="Playing">
+			<label for="playing">Playing</label></td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" id="physical exercise" name="hobbies" value="physical exercise">
+			<label for="physical exercise">Physical Exercise</label></td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" id="cooking" name="hobbies" value="cooking" checked>
+			<label for="cooking">Cooking</label></td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" id="traveling" name="hobbies" value="traveling">
+			<label for="traveling">Traveling</label></td>
+		</tr>
+		<tr>
+		    <th></th>
+			<td><input type="submit" name="send" value="Submit"></td>
+		</tr>
+		<tr>
+		    <th></th>
+			<td><input type="reset" name="clear" value="Empty"></td>
+		</tr>
+    </table>		
+	</form>
+</body>
+</html>
